@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 10px;
+    align-content: center;
+    color: white;
+    font-family: serif;
+}
+  
+  
+.container{
+  border: solid lightgray 15px;
+    display: block;
+    width: 1440px;
+    height: 2750px;
+    margin: 0px auto;
+    padding: 15px;
+    background-color: rgb(202, 169, 255);
+}
+.header{
+    background-color: rgb(102, 81, 81);
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+}
+ .navbar ul{
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0; */
+  overflow: hidden;
+  background-color: #333;
+  /* position:sticky;
+  position: sticky;
+  top: 0; */
+ }
+  .navbar li {
+    display: inline-block;
+    margin: 20px;
+  }
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+  }
+  
+  .navbar li a:hover {
+    background-color: white;
+    color:rgb(0, 0, 0);
+    transition: 1.2s;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: left;
+    color: cornflowerblue;
+    background-color: rgb(83, 207, 104);
+    background-image: url(emile-perron-xrVDYZRGdw4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 80px;
+    color: rgb(103, 163, 108);
+    font-family: cursive ;
+    border-bottom: 1px solid white;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    font-family: serif;
+}
+.section-1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 340px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-variant:normal ;
+    color: rgb(150, 45, 219);
+  }
+  
+  .circle img { 
+      border-radius:50%;
+      height:320px;
+      width: 320px;   
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+      justify-content: center;
+  }
+  .section-2 {
+    display: flex;
+    flex-direction: row;
+    height: 540px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+.left{
+    background-color: rgb(116, 113, 113);
+    width: 50%;
+    height: 560px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-size: 40px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+
+.right{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    height: 550px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.artical{
+    margin-top: auto;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(129, 91, 129);
+    font-size: 40px;
+    height: 180px;
+}
+  .artical img{
+    height: 180px;
+    width: 100%;
+    border: 1px solid black;
+  }
+  #Technologies h1{
+    margin-top: 50px;
+  }
+.Bigbox {
+    height: 400px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .rectBox {
+    /* background-color: rgb(54, 204, 116); */
+    width: 22%;
+    margin: 10px 15px;
+  }
+  .box {
+    color: white;
+    /* margin: 5px 5px; */
+    border-radius: 5px;
+    float: left;
+    height: 450px;
+    /* margin: 30px; */
+    background-color:black  ;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .box:hover {
+    background-color: rgb(114, 163, 91);
+    color: black;
+    transition: 0.8s;
+  }
+  
+  .boxImage img {
+    width: 100%;
+    border-radius: 10px;
+    height: 170px;
+  }
+  .boxImage {
+    padding: 20px;
+  }
+  
+  .title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title h3 {
+    text-align: center;
+    width: 100%;
+   
+  }
+
+  .intro {
+    text-align: justify;
+    padding: 10px;
+    margin: 5px;
+    height: 200px;
+    line-height: 20px;
+    font-family: serif;
+  }
+    .intro p{
+      height: 130px;
+    }
+  .intro .button a {
+    background-color: rgb(82, 136, 185);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 90%;
+    display:block;
+  }
+  .button a:hover{
+    background-color: rgb(187, 75, 75);
+    color: black;
+    font-style: oblique;
+  }
+
+
+  .contact h1{
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: serif;
+  }
+.footer{
+  background-color: gray;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 20px;
+}
+.footer ul li{
+  font-size: 20px;
+  font-family: serif;
+  padding-bottom: 10px;
+  font-style: inherit;
+}
+.footer a{
+  text-decoration: none;
+  font-family: monospace;
+  color: rgb(165, 42, 155);
+}
+
+.footer ul{
+  list-style-type: none;
+  /* margin: 0;
+  padding: 0; */
+  overflow: hidden;
+}
+.footer li a:hover{
+  color: rgb(8, 8, 8);
+  font-style: unset;
+}
+</style>
+<body>
+    <div class = "container">
+        <div class ="header" id="navbar">
+            <ul class="navbar">
+                <li> <a href="#Home">Home</a></li>
+                <li> <a href="#Team">Team</a></li>
+                <li> <a href="#About">About Us</a></li>
+                <li> <a href="#Technologies">Technologies</a></li>
+                <li> <a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="banner" id="Home"><font color="white">Welcome!! to Practical-8</font></div>
+       \
+        <div class = "heading" id="Team">
+            <h1><font color="white">OUR TEAM</font></h1>
+        </div>
+        <div class = "section-1">
+            <div class="circle"><img src=" 1.png"> <p>User1</p> </div>
+            <div class="circle"><img src=" 2.png"> <p>User2</p> </div>
+            <div class="circle"><img src=" 3.png"> <p>User3</p> </div>
+            <div class="circle"><img src=" 9.png"> <p>User4</p> </div>
+        </div>
+
+        <div class = "heading" id="About">
+            <h1><font color="white">About Us</font></h1>
+        </div> 
+        <div class="section-2">
+        <div class="left"><h3>About Projects</h3><br>
+        We are working on a Full stack development and this is our 8th project,
+    Hope you are enjoying
+</div>
+        <div class="right">
+            <div class="artical"><img src="p1.jpg" alt="Practical1"></div>
+            <div class="artical"><img src="p2.jpeg" alt="Practical2"></div>
+            <div class="artical"><img src="p3.jpg" alt="Practical3"></div>
+        </div>
+    </div>
+        <div class = "heading" id="Technologies">
+            <h1><font color="white">Technologies Used</font></h1>
+        </div>
+        <div class="Bigbox">
+            <div class="rectBox">
+                <div class="box">
+                    <div class="boxImage">
+                      <img src="html.png." alt="html introduction" />
+                    </div>
+                    <div class="title">
+                      <h3>Introduction to HTML</h3>
+                    </div>
+                    <div class="intro"><p>
+                      HTML stands for Hyper Text Markup Language. It is used to design web
+                      pages using markup language. HTML is the combination of Hypertext and
+                      Markup language. Hypertext defines the link between the web pages.</p>
+                      <div class="button">
+                        <a href="html1.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="rectBox">
+                <div class="box">
+                    <div class="boxImage">
+                      <img src="CSS.png" alt="css intro" />
+                    </div>
+                    <div class="title">
+                      <h3>Introduction to CSS</h3>
+                    </div>
+                    <div class="intro"> <p>
+                      Cascading Style Sheets, fondly referred to as CSS, is a simply
+                      designed language intended to simplify the process of making web pages
+                      presentable. CSS allows you to apply styles to web pages. </p>
+                      <div class="button">
+                        <a href="CSS.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="rectBox">
+                <div class="box">
+                    <div class="boxImage">
+                      <img src="JS.jpg" alt="javascript intro" />
+                    </div>
+                    <div class="title">
+                      <h3>Introduction to Javascript</h3>
+                    </div>
+                    <div class="intro"><p>
+                      JavaScript is lightweight, cross-platform and interpreted scripting
+                      language. It is well-known for the development of web pages.The most common host environment is the browser.</p>
+                      <div class="button">
+                        <a href="Java.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="rectBox">
+                <div class="box">
+                    <div class="boxImage">
+                      <img src="BB.jpg" alt="bootstrap intro" />
+                    </div>
+                    <div class="title">
+                      <h3>Introduction to Bootstrap</h3>
+                    </div>
+                    <div class="intro"><p>
+                      Bootstrap is a free and open-source tool collection for creating
+                      responsive websites and web applications. It is the most popular HTML,
+                      CSS, and JavaScript framework for developing responsive, mobile-first
+                      web sites.</p>
+                      <div class="button">
+                        <a href="B.html" target="_blank">Read More</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    <div class="sec-4" id="Contact">
+        <div class="contact"> 
+            <h1><font color="white">Contact Me</font></h1>
+        </div>
+        <div class="footer">
+            <ul>
+                
+                <li>
+                    BY : Ayushi Rathi
+                </li>
+                <li>
+                    To email : <a href="mailto: ayushi.rathi_cs18@gla.ac.in">Ayushi Rathi</a>
+                </li>
+                <li>
+                    <a href="#navbar"> GO TO TOP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
